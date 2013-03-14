@@ -18,6 +18,8 @@
 		8ADE4ABD16EEC84B00F8ABDE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE4ABC16EEC84B00F8ABDE /* Default-568h@2x.png */; };
 		8ADE4AC016EEC84B00F8ABDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE4ABF16EEC84B00F8ABDE /* ViewController.m */; };
 		8ADE4AC316EEC84B00F8ABDE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE4AC116EEC84B00F8ABDE /* ViewController.xib */; };
+		8ADE4ACA16EED98C00F8ABDE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADE4AC916EED98C00F8ABDE /* QuartzCore.framework */; };
+		8ADE4AD416F0376600F8ABDE /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ADE4AD316F0376600F8ABDE /* particle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		8ADE4ABE16EEC84B00F8ABDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8ADE4ABF16EEC84B00F8ABDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8ADE4AC216EEC84B00F8ABDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8ADE4AC916EED98C00F8ABDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8ADE4AD316F0376600F8ABDE /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ADE4ACA16EED98C00F8ABDE /* QuartzCore.framework in Frameworks */,
 				8ADE4AA716EEC84B00F8ABDE /* UIKit.framework in Frameworks */,
 				8ADE4AA916EEC84B00F8ABDE /* Foundation.framework in Frameworks */,
 				8ADE4AAB16EEC84B00F8ABDE /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +61,7 @@
 		8ADE4A9A16EEC84B00F8ABDE = {
 			isa = PBXGroup;
 			children = (
+				8ADE4ACB16EEDB0F00F8ABDE /* Resources */,
 				8ADE4AAC16EEC84B00F8ABDE /* CAEmitterSample */,
 				8ADE4AA516EEC84B00F8ABDE /* Frameworks */,
 				8ADE4AA416EEC84B00F8ABDE /* Products */,
@@ -73,6 +79,7 @@
 		8ADE4AA516EEC84B00F8ABDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8ADE4AC916EED98C00F8ABDE /* QuartzCore.framework */,
 				8ADE4AA616EEC84B00F8ABDE /* UIKit.framework */,
 				8ADE4AA816EEC84B00F8ABDE /* Foundation.framework */,
 				8ADE4AAA16EEC84B00F8ABDE /* CoreGraphics.framework */,
@@ -107,6 +114,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8ADE4ACB16EEDB0F00F8ABDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE4ACC16EEDB0F00F8ABDE /* particle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8ADE4ACC16EEDB0F00F8ABDE /* particle */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE4AD316F0376600F8ABDE /* particle.png */,
+			);
+			path = particle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +140,7 @@
 				8ADE4A9F16EEC84B00F8ABDE /* Sources */,
 				8ADE4AA016EEC84B00F8ABDE /* Frameworks */,
 				8ADE4AA116EEC84B00F8ABDE /* Resources */,
+				8ADE4AD516F0511500F8ABDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -163,10 +187,27 @@
 				8ADE4ABB16EEC84B00F8ABDE /* Default@2x.png in Resources */,
 				8ADE4ABD16EEC84B00F8ABDE /* Default-568h@2x.png in Resources */,
 				8ADE4AC316EEC84B00F8ABDE /* ViewController.xib in Resources */,
+				8ADE4AD416F0376600F8ABDE /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ADE4AD516F0511500F8ABDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8ADE4A9F16EEC84B00F8ABDE /* Sources */ = {
@@ -298,6 +339,7 @@
 				8ADE4AC816EEC84B00F8ABDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
